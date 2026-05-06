@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Александр Федосеев | iOS-разработчик</title>
+    <meta name="description" content="Портфолио и резюме Александра Федосеева, iOS-разработчика с 8-летним опытом. Swift, UIKit, SwiftUI, MVVM, REST API.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo">А. Федосеев</a>
+            <button class="nav-toggle" aria-label="Открыть меню">☰</button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">Обо мне</a></li>
+                    <li><a href="#experience" class="nav__link">Опыт</a></li>
+                    <li><a href="#skills" class="nav__link">Навыки</a></li>
+                    <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                    <li><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero-секция с фото и краткой информацией -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Александр Федосеев</h1>
+                    <p class="hero__subtitle">iOS разработчик</p>
+                    <p class="hero__text">Создаю мобильные приложения на Swift с 2017 года. Люблю чистый код, архитектуру и внимание к деталям.</p>
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn--primary">Связаться</a>
+                        <a href="#experience" class="btn btn--outline">Опыт работы</a>
+                    </div>
+                </div>
+                <div class="hero__photo">
+                    <!-- Сюда потом положите своё фото: img/photo.jpg -->
+                    <img src="img/photo.jpg" alt="Фото Александра Федосеева" onerror="this.src='https://placehold.co/400x400?text=Фото'">
+                </div>
+            </div>
+        </section>
+
+        <!-- Обо мне + личная информация -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section__title">Обо мне</h2>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p>Мне 45 лет, живу в Москве. Начинал с системного администрирования и разработки игровых механик на Unreal Engine, но с 2021 года полностью сосредоточился на iOS-разработке. Благодаря опыту в разных сферах умею видеть проект целиком — от базы данных до интерфейса и серверной логики.</p>
+                        <p>Постоянно учусь: прошёл курсы VK Education по iOS, получил магистратуру в МГТУ им. Баумана (программная инженерия). В свободное время экспериментирую с LLM и DevOps-инструментами.</p>
+                        <p>Готов к работе в офисе, удалённо или в гибридном формате. Открыт к командировкам.</p>
+                    </div>
+                    <div class="about__details">
+                        <ul class="info-list">
+                            <li><span>📅 Дата рождения:</span> 23 июня 1980</li>
+                            <li><span>📍 Проживание:</span> Москва</li>
+                            <li><span>✈️ Командировки:</span> готов</li>
+                            <li><span>🚗 Водительские права:</span> категория B</li>
+                            <li><span>🗣️ Языки:</span> Русский (родной), Английский (B1), Испанский (A1)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Опыт работы -->
+        <section id="experience" class="section section--gray">
+            <div class="container">
+                <h2 class="section__title">Опыт работы</h2>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__date">Ноябрь 2021 — настоящее время</div>
+                        <div class="timeline__content">
+                            <h3>iOS разработчик</h3>
+                            <p>Создание приложений на Swift с использованием UIKit в рамках архитектур MVC и MVVM. Проектирование клиент-серверного взаимодействия и документирование в спецификации OpenAPI (Swagger). Разработка ER-диаграмм, локального серверного стенда (Python/Django) для эмуляции бэкенда. Интеграция и локальное развертывание LLM для комплексного тестирования клиентской части.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__date">Октябрь 2019 — Январь 2021</div>
+                        <div class="timeline__content">
+                            <h3>Системный администратор</h3>
+                            <p>ООО «Лидер» — обеспечение бесперебойной работы IT-инфраструктуры компании, администрирование серверов, настройка сетей.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__date">Март 2017 — Июль 2019</div>
+                        <div class="timeline__content">
+                            <h3>Разработчик игровых механик</h3>
+                            <p>Tarasov Game Studio — разработка игровых механик на Unreal Engine 4.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навыки (технологии и инструменты) -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section__title">Навыки и технологии</h2>
+                <div class="skills__grid">
+                    <div class="skill-category">
+                        <h3>iOS & Swift</h3>
+                        <ul class="skill-list">
+                            <li>Swift, UIKit, SwiftUI</li>
+                            <li>MVC, MVVM, SOLID</li>
+                            <li>CoreData, XCTest</li>
+                            <li>CocoaPods, SPM</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Сети и API</h3>
+                        <ul class="skill-list">
+                            <li>REST API, JSON</li>
+                            <li>OpenAPI (Swagger)</li>
+                            <li>URLSession, Alamofire</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Инструменты</h3>
+                        <ul class="skill-list">
+                            <li>Git, Xcode</li>
+                            <li>SQL (базово)</li>
+                            <li>Python/Django (стенды)</li>
+                            <li>Docker, LLM (базово)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Портфолио (заглушка, сюда потом добавите проекты) -->
+        <section id="portfolio" class="section section--gray">
+            <div class="container">
+                <h2 class="section__title">Портфолио</h2>
+                <div class="portfolio__placeholder">
+                    <p>Здесь скоро появятся мои проекты и приложения.</p>
+                    <p>Вы можете посмотреть примеры кода на <a href="https://github.com/alfedsv" target="_blank" rel="noopener">моём GitHub</a>.</p>
+                </div>
+                <!-- место для будущих карточек проектов -->
+                <div class="portfolio__grid" id="portfolio-grid">
+                    <!-- динамически добавите карточки позже, можно оставить пустым -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section__title">Контакты</h2>
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <p><strong>Телефон:</strong> <a href="tel:+79152098005">+7 (915) 209-80-05</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:alfedsv@yandex.ru">alfedsv@yandex.ru</a></p>
+                        <p><strong>Telegram:</strong> <a href="https://t.me/alfeds" target="_blank">@alfeds</a></p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/alfedsv" target="_blank">github.com/alfedsv</a></p>
+                    </div>
+                    <div class="contact__note">
+                        <p>Предпочитаемый способ связи — Telegram. Буду рад обсудить сотрудничество, интересные проекты или возможности.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Александр Федосеев. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
