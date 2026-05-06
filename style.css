@@ -42,11 +42,20 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2563eb;
-    text-decoration: none;
-    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .logo-img {
+        height: 40px;
+    }
 }
 
 .nav__list {
@@ -205,6 +214,10 @@ body {
 }
 
 .info-list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 12px;
     padding: 12px 0;
     border-bottom: 1px solid #eef2f6;
 }
@@ -215,8 +228,8 @@ body {
 
 .info-list span {
     font-weight: 600;
-    width: 130px;
-    display: inline-block;
+    min-width: 140px;
+    flex-shrink: 0;
     color: #0f172a;
 }
 
@@ -365,6 +378,8 @@ body {
 }
 
 /* ----- АДАПТИВ для планшетов и телефонов ----- */
+
+
 @media (max-width: 900px) {
     .hero__container {
         flex-direction: column-reverse;
