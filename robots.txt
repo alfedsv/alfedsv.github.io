@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /portfolio/
+Sitemap: https://alfedsv.github.io/sitemap.xml
